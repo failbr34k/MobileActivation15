@@ -103,7 +103,7 @@ CFDataRef my_SecGenerateCertificateRequestWithParameters(SecRDN _Nonnull * _Nonn
 
 
 //SecIdentity
-*/
+
 OSStatus (*orig_SecIdentityCopyCertificate)(SecIdentityRef identityRef, SecCertificateRef * __nonnull certificateRef);
 OSStatus my_SecIdentityCopyCertificate(SecIdentityRef identityRef, SecCertificateRef * __nonnull certificateRef)
 {
