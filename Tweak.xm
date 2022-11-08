@@ -315,7 +315,7 @@ SecItemDelete
     MSHookFunction(SecKeyCopyPublicKey, my_SecKeyCopyPublicKey, &orig_SecKeyCopyPublicKey);
     MSHookFunction(SecKeyCopySystemKey, my_SecKeyCopySystemKey &orig_SecKeyCopySystemKey);
     MSHookFunction(SecKeyCreateAttestation, my_SecKeyCreateAttestation, &orig_SecKeyCreateAttestation);
-    MSHookFunction(SecKeyCreateRandomKey my_SecKeyCreateRandomKey, &orig_SecKeyCreateRandomKey);
+    MSHookFunction(SecKeyCreateRandomKey, my_SecKeyCreateRandomKey, &orig_SecKeyCreateRandomKey);
     MSHookFunction(SecKeyCreateRSAPublicKey_ios, my_SecKeyCreateRSAPublicKey_ios, &orig_SecKeyCreateRSAPublicKey_ios);
     MSHookFunction(SecKeyCreateSignature, my_SecKeyCreateSignature, &orig_SecKeyCreateSignature);
     MSHookFunction(SecKeyCreateWithData, my_SecKeyCreateWithData, &orig_SecKeyCreateWithData);
